@@ -1,0 +1,11 @@
+Should the older data be deleted?:[y|n]
+Should the incomprehensible text be generated automatically?: [y|n]
+Should auto settings be used:?[y|n]
+Your text will appear in RefactoredText.txt!
+How many characters should be used?:
+Should the finished text be written into a txt file?: [y|n]
+How do you want to convey the incomprehensible text to me?: (via an already existing txt file[0] or as an input[1]
+What is the file name?:
+What is the incomprehensible text?:
+Founded words:
+ characters were used.

@@ -1,0 +1,11 @@
+Sollen die älteren Daten gelöscht werden?:[j|n]
+Soll der Unverständliche Text automatisch generiert werden?: [j|n]
+Sollen Auto Einstellungen verwendet werden:?[j|n]
+Dein Text wird in RefactoredText.txt erscheinen!
+Wie viele Zeichen sollen verwendet werden?:
+Soll der fertige Text in eine Txt File geschrieben werden?: [j|n]
+Wie willst du mir den Unverständlichen Text vermitteln?: (Über eine schon bereits vorhandene txt file[0] oder als ein Input[1]
+Wie heißt der File name?:
+Wie lautet der Unverständliche Text?:
+Gefundene Worte:
+ zeichen wurden verwendet.
