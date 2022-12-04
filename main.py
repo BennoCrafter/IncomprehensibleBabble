@@ -30,7 +30,7 @@ incomprehensibletext = None
 # langauge setup
 
 lang_codes = ["ger", "eng"]
-input_language = lang_codes[1]
+input_language = lang_codes[0]
 
 # create files if it doesn't exist
 
@@ -126,8 +126,8 @@ else:
 GenerateIncomprehensibleText()
 CheckingIncomprehnsible()
 
-print(language[8] + "\n" + str(numberofwords) + "\n" + str(
-    len(incomprehensibletext)) + language[9] + "\n\n\n\n" + text)
+print(language[9] + "\n" + str(numberofwords) + "\n" + str(
+    len(incomprehensibletext)) + language[10] + "\n\n\n\n" + text)
 
 if write_text_into_txt or auto:
     # write into file
