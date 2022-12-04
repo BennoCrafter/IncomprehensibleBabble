@@ -79,7 +79,7 @@ def CheckingIncomprehnsible():
 # some inputs and set some variables
 
 answer = input(language[0])
-if answer.lower() == "j":
+if answer.lower() == "j" or answer.lower() == "y":
     f = open(filename_refactored_text, 'r+')
     f.truncate(0)  # need '0' when using r+
     f = open(filename_incomprehensible_text, 'r+')
@@ -87,10 +87,10 @@ if answer.lower() == "j":
 answer = input(language[1])
 
 # autotext
-if answer == "j" or "y":
+if answer == "j" or answer.lower() == "y":
     auto_text = True
     answer = input(language[2])
-    if answer.lower() == "j" or "y":
+    if answer.lower() == "j" or answer.lower() == "y":
         auto = True
         print(language[3])
     else:
@@ -98,7 +98,7 @@ if answer == "j" or "y":
         answer = input(language[4])
         loop = int(answer) + 1
         answer = input(language[5])
-        if answer.lower() == "j" or "y":
+        if answer.lower() == "j" or answer.lower() == "y":
             write_text_into_txt = True
             print(language[3])
         else:
@@ -117,11 +117,12 @@ else:
         answer = input(language[8])
         incomprehensibletext = answer
     answer = input(language[5])
-    if answer.lower() == "j" or "y":
+    if answer.lower() == "j" or answer.lower() == "y":
         write_text_into_txt = True
         print(language[3])
     else:
         write_text_into_txt = False
+
 
 GenerateIncomprehensibleText()
 CheckingIncomprehnsible()
