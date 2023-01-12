@@ -12,14 +12,15 @@ class Generate:
         self.loop = 10000
         self.incomprehensibletext = ""
         self.max_characters_in_line = 100
+        self.deeper_loop = 100
 
     def GenerateIncomprehensibleText(self):
         # generate incomprehensible babble
-
-        for _ in tqdm(range(round(self.loop/self.max_characters_in_line))):
-            for i in range(self.max_characters_in_line):
-                self.incomprehensibletext = self.incomprehensibletext + (random.choice(self.validcharacters))
-            self.incomprehensibletext = self.incomprehensibletext + "\n"
+        for _ in tqdm(range(self.deeper_loop)):
+            for _ in range(round(self.loop/self.max_characters_in_line)):
+                for i in range(self.max_characters_in_line):
+                    self.incomprehensibletext = self.incomprehensibletext + (random.choice(self.validcharacters))
+                self.incomprehensibletext = self.incomprehensibletext + "\n"
 
         # write into write_into_file
         with open(self.filename_incomprehensible_text, "a+") as write_file:
