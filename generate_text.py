@@ -1,5 +1,6 @@
 import random
 from tqdm import tqdm
+import pync
 
 
 class Generate:
@@ -13,6 +14,8 @@ class Generate:
         self.incomprehensibletext = ""
         self.max_characters_in_line = 100
         self.deeper_loop = 100
+        self.message = "The Text was generated sucessfully and was saved!"
+        self.title = "Generated Text Sucessfully!"
 
     def GenerateIncomprehensibleText(self):
         # generate incomprehensible babble
@@ -26,6 +29,10 @@ class Generate:
         with open(self.filename_incomprehensible_text, "a+") as write_file:
             write_file.write(self.incomprehensibletext)
         write_file.close()
+        self.finish()
+
+    def finish(self):
+        pync.notify(message=self.message, title=self.title)
 
 
 if __name__ == "__main__":
